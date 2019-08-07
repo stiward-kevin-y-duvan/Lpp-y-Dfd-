@@ -1,0 +1,16 @@
+real a,b,c 
+
+inicio
+escriba "SUMA DE LOS NUMEROS INGRESADOS POR TECLADO"
+llamar nueva_linea
+escriba "INGRESE EL PRIMER NUMERO "
+lea a
+llamar nueva_linea
+escriba "INGRESE EL SUGUNDO NUMRERO "
+lea b
+c<-a+b 
+llamar nueva_linea
+escriba " LA SUMA DE " , a, " MAS " , b , " ES:" ,c
+fin
+
+
