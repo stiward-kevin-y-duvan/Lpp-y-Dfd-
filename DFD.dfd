@@ -6,8 +6,8 @@
 0
 4
 1
-25
-'LA SUMA DE DOS NUMEROS '
+26
+'LA RESTA DE DOS NUMEROS '
 4
 1
 27
@@ -29,9 +29,9 @@ B
 1
 C
 3
-A+B
+A-B
 4
 1
-43
-'LA SUMA DE ' , A, ' MAS ' , B , ' ES:' , C
+46
+'LA RESTA DE ' , A, ' MENOS ' , B , ' ES:' , C
 1
