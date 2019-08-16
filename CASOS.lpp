@@ -1,0 +1,214 @@
+real A,B,C
+caracter x,f
+cadena [20]H
+entero op2,base,n,area 
+inicio 
+   escriba " ingrese su nombre"
+   llamar nueva_linea
+   lea H
+   escriba "ingrese un nuevo caracter del menu"
+   llamar nueva_linea 
+   escriba "S para la suma"
+   llamar nueva_linea
+   escriba "R para la resta"
+   llamar nueva_linea
+   escriba "M para multiplicar"
+   llamar nueva_linea
+   escriba "D para dividir"
+   llamar nueva_linea
+   escriba "O para el area de una figura o ver mas opciones"
+   llamar nueva_linea
+   escriba "caracter distinto a S, R, M, D,O  para terminar"
+   llamar nueva_linea 
+   lea x 
+    caso x                                                             /* caso 1 */  
+        'S','s': escriba "vamos a la suma"
+             llamar nueva_linea 
+             escriba "ingrese el primer numero"
+             llamar nueva_linea
+             lea A 
+             llamar nueva_linea
+             escriba "ingrese el segundo numero"
+             llamar nueva_linea
+             lea B
+             llamar nueva_linea 
+             C<-A+B
+             escriba "la suma es: ",C
+             llamar nueva_linea
+             
+        'R','r': escriba "vamos a restar"
+             llamar nueva_linea
+             escriba "ingrese el primer numero"
+             llamar nueva_linea
+             lea A
+             llamar nueva_linea
+             escriba "ingrese el segundo numero"
+             llamar nueva_linea
+             lea B
+             llamar nueva_linea
+             C<-A-B 
+             escriba "la resta entre ",  A, " y ", B , " es: ", C
+             llamar nueva_linea 
+                    
+             
+        'M','m': escriba "vamos a multiplicar"
+             llamar nueva_linea
+             escriba "ingrese el primer numero"
+             lea A 
+             llamar nueva_linea
+             escriba "ingrese el segundo numero"
+             llamar nueva_linea
+             lea B
+             llamar nueva_linea
+             C<-A*B
+             escriba "la respuesta es: ",C
+             llamar nueva_linea
+            
+        'D','d': escriba "vamos con la divicion"
+             llamar nueva_linea
+             escriba "ingrese el primer nuvero"
+             llamar nueva_linea
+             lea A
+             llamar nueva_linea    
+             escriba "ingrese el segundo numero"
+             llamar nueva_linea
+             lea B
+             llamar nueva_linea
+             C<-A/B
+             escriba "la respuesta es: ",C  
+             llamar nueva_linea
+        'V','v': escriba "Victor"     
+                
+                
+        'O','o': escriba "digite opcion a selecionar "
+              llamar nueva_linea
+              escriba "1 para area triangulo "
+              llamar nueva_linea
+              escriba "2 para area cuadrilatero"
+              llamar nueva_linea
+              escriba "3 para area circulo"
+              llamar nueva_linea 
+              escriba "4 para una opcion diferente"
+              llamar nueva_linea
+               lea op2 
+              
+               caso op2                                                     /* caso 2 */
+               
+                1: escriba "base de un triangulo"
+                   llamar nueva_linea
+                   escriba "ingrese el  valor para la base "
+                   llamar nueva_linea
+                   lea base
+                   llamar nueva_linea
+                   escriba "imgrese el valor de la altura " 
+                   llamar nueva_linea
+                   lea n  
+                   area <- (base*n)/2
+                   escriba "el area del triangulo es: ", area
+                   llamar nueva_linea
+                   
+               2: escriba "base de un cuadrilatero"
+                   llamar nueva_linea
+                   escriba "ingrese el valor para la base"
+                   llamar nueva_linea
+                   lea base
+                   llamar nueva_linea
+                   escriba "ingrese el valor para la altura"
+                   llamar nueva_linea
+                   lea n
+                   area <- base*n
+                   escriba "el area del cuadrado es: ", area
+                   llamar nueva_linea
+                   
+                3: escriba "area de un circulo"
+                   llamar nueva_linea
+                   escriba "ingrese el valor del radio del circulo "
+                   llamar nueva_linea
+                   lea n
+                   area<-3.14159265358979323846264338327950288*(n*n) 
+                   llamar nueva_linea
+                   escriba "el area del circulo es: ", area
+                   llamar nueva_linea
+              
+                   
+                4: escriba "selecione una de las siguientes opciones: "
+                   llamar nueva_linea
+                   escriba "A para entrar con contraseña"
+                   llamar nueva_linea
+                   escriba "B para imprimir su nombre"
+                   llamar nueva_linea
+                   escriba "C para saber la fecha"
+                   llamar nueva_linea
+                   escriba "D para determinar su estado"
+                   lea f
+                   llamar nueva_linea
+                     
+                     caso f                                                             /*caso 3*/
+                       
+                          'A','a': escriba "ingrese una clave de 3 digitos "
+                                   llamar nueva_linea
+                                   lea A 
+                                   llamar nueva_linea
+                                    mientras A<>123 haga                                /* mientras */
+                                     escriba "contraseña incorrecta: "
+                                     llamar nueva_linea                                             
+                                    lea A
+                                   fin mientras                                          /*fin mientras */
+                                     escriba "contraseña correcta" 
+                                    llamar nueva_linea
+                                    llamar nueva_linea
+                                     
+                                    
+                           'B','b': escriba "su nombre es",H
+                                    llamar nueva_linea 
+                                    
+                           'C','c': escriba "la fecha de hoy es: 15-agosto-2019"          
+                                    llamar nueva_linea 
+                                    
+                           'D','d': escriba "ingrese su edad"
+                                    llamar nueva_linea
+                                    lea A 
+                                       
+                                        si A>=18 entonces      
+                                        escriba "su estado es el de un adulto"                 /* si numero 1*/  
+                                        sino 
+                                         
+                                         si (A<18) y (A>11) entonces 
+                                         escriba "su estado es el de un adolescente "                  /* si numero 2*/
+                                         sino
+                                          
+                                           si (A<11) entonces 
+                                           escriba "su estado es el de un niño"                              /* si numero 3*/
+                                           sino escriba "caracter no reconocido"
+                                           fin si                                                           /* fin si numero 3*/
+                                           
+                                        fin si                                                         /* fin si numero 2*/
+                                       
+                                       fin si                                                  /* fin si numero 3 */
+                                        
+                                                                                          
+                           sino: escriba "caracter no encontrado"
+                                 llamar nueva_linea
+                                  
+                           fin caso                                                 /* fin caso 3 */           
+                                      
+                sino: escriba " la opcion no fue encontrada"    
+                       llamar nueva_linea
+                fin caso                                               /* fin caso 2*/  
+                
+     sino: escriba "opcion invalida" 
+           llamar nueva_linea
+           escriba "su nombre es: ",H
+           
+    fin caso                                          /* fin caso 1*/
+    
+    escriba "su nombre es: ",H
+    llamar nueva_linea
+    escriba "CREADO POR: "
+    llamar nueva_linea
+    escriba "5T1WARD_24"
+    llamar nueva_linea
+fin      
+              
+             
+           
