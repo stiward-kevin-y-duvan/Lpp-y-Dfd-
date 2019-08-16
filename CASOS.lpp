@@ -185,7 +185,17 @@ inicio
                                         fin si                                                         /* fin si numero 2*/
                                        
                                        fin si                                                  /* fin si numero 3 */
-                                        
+                         
+                         
+                           'f', 'F':escriba "ingrese su estatura"
+                                    lea A       
+                                    si (A>160) entonces 
+                                    escriba "puedes ingresar a la montaña rusa"            /* agregue una nueva opcion kevin1551*/ 
+                                    sino
+                                    escriba "no puedes ingresar a la montaña rusa"                                  
+                                    fin si
+                                    
+                                
                                                                                           
                            sino: escriba "caracter no encontrado"
                                  llamar nueva_linea
